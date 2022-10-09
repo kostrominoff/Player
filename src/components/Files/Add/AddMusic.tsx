@@ -13,7 +13,7 @@ const AddMusic: FC<{ setMusic: Dispatch<SetStateAction<File[]>> }> = ({ setMusic
             <BsPlusLg fontSize={28}/>
           </div>
         </button>
-        <input type="file" multiple ref={fileInput} style={{display: 'none'}} onChange={(e) => {
+        <input type="file" multiple ref={fileInput} accept={'.mp3,audio/*'} style={{display: 'none'}} onChange={(e) => {
           if (e.target.files && e.target.files.length) {
             setMusic(Array.from(e.target.files));
           }
