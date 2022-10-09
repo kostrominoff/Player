@@ -1,0 +1,9 @@
+@import 'src/styles/variables.module';
+
+.list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  overflow-y: scroll;
+  border-left: 3px solid $accent ;
+}

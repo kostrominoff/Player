@@ -1,0 +1,17 @@
+@import 'src/styles/variables.module';
+
+.files {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: $background-secondary;
+  font-size: 18px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

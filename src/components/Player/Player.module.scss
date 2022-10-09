@@ -1,0 +1,30 @@
+@import 'src/styles/variables.module';
+
+.player {
+  padding: 15px;
+  background-color: $background-secondary;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  position: absolute;
+  left: calc(50% - 320px);
+  top: 50%;
+  transform: translate(calc(-50% + 160px),-50%);
+
+  h1 {
+    height: 62px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.playing {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
